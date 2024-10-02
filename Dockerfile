@@ -9,7 +9,7 @@ COPY . /app
 
 # Installer les dépendances de l'application
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Exposer le port si nécessaire (par exemple, pour une app web)
 EXPOSE 5000
